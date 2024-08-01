@@ -1,18 +1,24 @@
 // src/app/page.tsx
 import React from "react";
 import Link from "next/link";
+import './globals.css'
 
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Home</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link href='/login'>Login</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className='topnav'>
+        <nav>
+          <ul>
+            <li>
+              <a className='topnav-btn' href='/login'>Login</a>
+              <a className='topnav-btn' href='/signup'>Signup</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <h1 className="homepage">Mood App</h1>
+
     </div>
 
   );
