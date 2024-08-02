@@ -16,10 +16,16 @@ const Home: React.FC = () => {
           </ul>
         </nav>
       </div>
-
-      <h1 className="homepage">Mood App</h1>
+      <div className='container-welcome'>
+        <div className='flexbox-h5'>
+          <h3>Welcome to MoodSync</h3>
+        </div>
+        <div className='flexbox-p'>
+          <p>MoodSync is an interactive mood tracker that integrates daily mood logs, sleep patterns, and exercise data into one visual platform. With dynamic insights and easy-to-use features, it helps you understand how your mood relates to your daily activities.</p>
+        </div>
+      </div>
       <div className="arrow arrow--top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="609.9" overflow="visible">
+        <svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="609.9" overflow="hidden">
           <style>
             {`.geo-arrow {
               fill: none;
@@ -34,13 +40,13 @@ const Home: React.FC = () => {
           <circle className="geo-arrow item-to bounce-2" cx="194.65" cy="69.54" r="7.96" />
           <circle className="geo-arrow draw-in" cx="194.65" cy="39.5" r="7.96" />
           <circle className="geo-arrow item-to bounce-3" cx="194.65" cy="9.46" r="7.96" />
-          <g className="geo-arrow item-to bounce-2">
+          {/* <g className="geo-arrow item-to bounce-2">
             <path className="st0 draw-in" d="M181.21 619.5l13.27 27 13.27-27zM194.48 644.5v-552" />
-          </g>
+          </g> */}
         </svg>
       </div>
       <div className="arrow arrow--bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="31.35" height="649.9" overflow="visible">
+        <svg xmlns="http://www.w3.org/2000/svg" width="31.35" height="649.9" overflow="hidden">
           <style>
             {`.geo-arrow {
               fill: none;
@@ -53,17 +59,16 @@ const Home: React.FC = () => {
             <circle className="geo-arrow item-to bounce-3" cx="15.5" cy="580.36" r="7.96" />
             <circle className="geo-arrow draw-in" cx="15.5" cy="610.4" r="7.96" />
             <circle className="geo-arrow item-to bounce-2" cx="15.5" cy="640.44" r="7.96" />
-            <g className="item-to bounce-2">
+            {/* <g className="item-to bounce-2">
               <path className="geo-arrow draw-in" d="M28.94 30.4l-13.26-27-13.27 27zM15.68 5.4v552" />
-            </g>
+            </g> */}
           </g>
         </svg>
       </div>
       <div className="main">
         <div className="main__text-wrapper">
           <h1 className="main__title"></h1>
-          <h2></h2>
-          <svg xmlns="http://www.w3.org/2000/svg" className="dotted-circle" width="352" height="352" overflow="visible">
+          <svg xmlns="http://www.w3.org/2000/svg" className="dotted-circle" width="352" height="352" overflow="hidden">
             <circle cx="176" cy="176" r="174" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.921,11.9271" />
           </svg>
         </div>

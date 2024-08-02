@@ -19,10 +19,6 @@
     color: white;
     display: inline-block;
     margin-right: 5px;
-
-    /* &:hover {
-        background-color: cornflowerblue;
-    } */
 }
 
 .topnav {
@@ -111,7 +107,26 @@ div[class*=box] {
   transform: scale(0.1, 1);
 }
 
+.container-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 2px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(13, 70, 94, 0.27);
+    backdrop-filter: blur(15px);
+}
 
+.flexbox-p {
+
+    font-size: smaller;
+}
 
 /* home page background animation */
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
@@ -169,7 +184,7 @@ h2 {
   border-radius: 30em;
   background: linear-gradient(var(--blue), var(--dkblue));
   align-self: flex-end;
-  animation: gradient-fade 8s ease-in-out 3s infinite alternate;
+  animation: gradient-fade 9s ease-in-out 3s infinite alternate;
 }
 
 .main::after {
@@ -179,7 +194,7 @@ h2 {
   width: 10em;
   border-radius: 10em;
   background: linear-gradient(var(--blue), var(--dkblue));
-  animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
+  animation: gradient-fade-alt 7s ease-in-out 9s infinite alternate;
 }
 
 .main__text-wrapper {
