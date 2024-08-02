@@ -19,7 +19,7 @@ const LoginForm: React.FC = () => {
     };
 
     return (
-        <form className='form' onSubmit={handleSubmit}>
+        <form className='login-form' onSubmit={handleSubmit}>
             <div className='title'>Welcome Back</div>
             <div className='subtitle'>Please log into your account</div>
             <div className='input-container ic1'>

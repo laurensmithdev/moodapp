@@ -3,7 +3,7 @@
     color: pink;
 }
 
-.topnav ul {
+/* .topnav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -25,10 +25,10 @@
     overflow: hidden;
     justify-content: flex-end;
     padding: 10px 20px;
-}
+} */
 
 /* nav button animation */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+/* @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
 html,
 body {
@@ -105,7 +105,7 @@ div[class*=box] {
 .topnav-btn:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
-}
+} */
 
 .container-welcome {
     display: flex;
@@ -276,6 +276,31 @@ h2 {
 }
 
 /* animations */
+
+/* globals.css */
+
+.geo-arrow {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-miterlimit: 10;
+}
+
+.arrow--top .geo-arrow {
+  /* Additional styles for the top arrow if needed */
+}
+
+.arrow--bottom .geo-arrow {
+  /* Additional styles for the bottom arrow if needed */
+}
+
+.dotted-circle {
+  stroke-width: 2px;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 12.921, 11.9271;
+}
+
+
 .draw-in {
   stroke-dasharray: 1000;
   stroke-dashoffset: 10;

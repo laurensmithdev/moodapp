@@ -1,4 +1,3 @@
-/* import '../globals.css' */
 
 /* login form */
 body {
@@ -9,7 +8,7 @@ body {
     height: 100vh;
   }
 
-  .form {
+  .login-form {
     background-color: #03041081;
     border-radius: 20px;
     box-sizing: border-box;
