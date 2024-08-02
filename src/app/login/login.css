@@ -1,6 +1,6 @@
 /* import '../globals.css' */
 
-/* signup form */
+/* login form */
 body {
     align-items: center;
     background-color: #000;
@@ -13,7 +13,7 @@ body {
     background-color: #03041081;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 500px;
+    height: 450px;
     padding: 20px;
     width: 350px;
   }
@@ -56,12 +56,9 @@ body {
   }
 
   .ic2 {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
-  .ic3 {
-    margin-top: 20px;
-  }
 
   .input {
     background-color: #303245;
@@ -75,6 +72,8 @@ body {
     padding: 4px 20px 0;
     width: 100%;
   }
+
+
 
   .submit {
     background-color: rgba(46, 132, 185, 0.746);
