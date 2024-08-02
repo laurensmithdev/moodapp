@@ -1,6 +1,8 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import PublicNav from './navigation/PublicNav'; // Adjust import path as needed
+import './globals.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="layout-wrapper">
+          <main className="main-content">{children}</main>
+        </div>
+      </body>
     </html>
   );
 }

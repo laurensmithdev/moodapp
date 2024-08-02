@@ -12,9 +12,10 @@ body {
     background-color: #03041081;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 450px;
+    height: 430px;
     padding: 20px;
     width: 350px;
+    margin-bottom: 10px;
   }
 
   .title {
@@ -50,14 +51,13 @@ body {
     outline: none;
 }
 
-  .ic1 {
+  .ic1-login {
     margin-top: 40px;
   }
 
-  .ic2 {
-    margin-top: 30px;
+  .ic2-login {
+    margin-top: 20px;
   }
-
 
   .input {
     background-color: #303245;
@@ -71,8 +71,6 @@ body {
     padding: 4px 20px 0;
     width: 100%;
   }
-
-
 
   .submit {
     background-color: rgba(46, 132, 185, 0.746);

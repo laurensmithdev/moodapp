@@ -1,5 +1,3 @@
-/* import '../globals.css' */
-
 /* signup form */
 body {
     align-items: center;
@@ -16,6 +14,7 @@ body {
     height: 500px;
     padding: 20px;
     width: 350px;
+    margin-bottom: 10px;
   }
 
   .title {

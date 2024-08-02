@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import './globals.css';
+import './page.module.css';
 // import './navigation/PublicNav';
 import PublicNav from "./navigation/PublicNav";
 import SVGComponents from "./SVGComponents";
