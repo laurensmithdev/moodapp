@@ -1,15 +1,15 @@
 // src/app/page.tsx
 import React from "react";
 import Link from "next/link";
-import './globals.css';
+// import './globals.css';
 import './page.module.css';
-// import './navigation/PublicNav';
+// import SVGComponents from "./SVGComponents";
 import PublicNav from "./navigation/PublicNav";
-import SVGComponents from "./SVGComponents";
+import Background from "./Background";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <Background>
       <PublicNav />
       <div className='container-welcome'>
         <div className='flexbox-h5'>
@@ -23,8 +23,7 @@ const Home: React.FC = () => {
           <Link href='/signup' className='topnav-btn'>Sign up</Link>
         </div>
       </div>
-      <SVGComponents />
-    </div>
+    </Background>
   );
 };
 
