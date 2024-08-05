@@ -9,20 +9,6 @@ const PublicNav: React.FC = () => {
             <Link href='/' className='topnav-title'>
                 MoodSync
             </Link>
-            <nav>
-                <ul>
-                    <li>
-                        <Link href='/login' className='topnav-btn'>
-                            Log in
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/signup' className='topnav-btn'>
-                            Sign up
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
         </div>
     );
 };
