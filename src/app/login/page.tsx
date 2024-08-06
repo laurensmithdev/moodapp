@@ -1,5 +1,6 @@
 // src/app/login/page.tsx
-import React from "react";
+import React, { FormEvent } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import LoginForm from "./LoginForm";
 import PublicNav from '../navigation/PublicNav';
@@ -7,6 +8,7 @@ import Background from '../Background'
 import '../globals.css'
 
 const LoginPage: React.FC = () => {
+
     return (
         <Background>
             <div className="page-container">
@@ -14,7 +16,7 @@ const LoginPage: React.FC = () => {
                 <main className="login-main">
                     <LoginForm />
                     <div className='subtext'>
-                        Don't have an account?{' '}
+                        Don&apos;t have an account?{' '}
                         <Link legacyBehavior href='/signup'>
                             <a>Sign up</a>
                         </Link>

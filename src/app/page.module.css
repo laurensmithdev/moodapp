@@ -1,0 +1,26 @@
+/* src/app/page.module.css */
+
+.container_welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 2px;
+    width: 50%;
+    max-width: 500px;
+    margin: 100px auto 0;
+    padding: 30px;
+    background-color: rgba(13, 70, 94, 0.27);
+    backdrop-filter: blur(15px);
+  }
+
+  .flexbox_p {
+      font-size: smaller;
+  }
+
+  .layout_wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }

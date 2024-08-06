@@ -28,7 +28,7 @@ const SignupForm: React.FC = () => {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="title">Welcome</div>
-      <div className="subtitle">Let's create your account!</div>
+      <div className="subtitle">Let&apos;s create your account!</div>
       <div className="input-container ic1">
         <input
           id="name"
