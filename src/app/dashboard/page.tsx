@@ -2,13 +2,14 @@
 
 import React from "react";
 import Background from "../Background";
+import PublicNav from "../navigation/PublicNav";
+import UserNav from "../navigation/UserNav";
 
 const Dashboard: React.FC = () => {
     return (
         <Background>
-            <div>
-                <h1>Dashboard</h1>
-            </div>
+            <PublicNav />
+            <UserNav />
         </Background>
     );
 };

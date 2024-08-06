@@ -1,4 +1,4 @@
-.topnav {
+.publicnav {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,30 +12,30 @@
     box-sizing: border-box;
 }
 
-.topnav-title {
+.publicnav-title {
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     text-decoration: none;
     margin: auto;
     text-align: center;
     margin-top: 0px;
 }
 
-.topnav ul {
+.publicnav ul {
     display: flex;
     list-style-type: none;
     margin: 10px;
     padding: 0;
 }
 
-.topnav-btn {
+.publicnav-btn {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     margin-left: 5px;
 }
 
-.topnav-btn:hover {
+.publicnav-btn:hover {
     color: #ddd;
 }
 
@@ -74,15 +74,15 @@ div[class*=box] {
   cursor: pointer;
 }
 
-.topnav-btn {
+.publicnav-btn {
   color: white;
   transition: all 0.2s;
   position: relative;
 }
-.topnav-btns span {
+.publicnav-btns span {
   transition: all 0.2s;
 }
-.topnav-btn::before {
+.publicnav-btn::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -100,14 +100,14 @@ div[class*=box] {
   border-bottom-color: rgba(255,255,255,0.5);
   transform: scale(0.1, 1);
 }
-.topnav-btn:hover span {
+.publicnav-btn:hover span {
   letter-spacing: 2px;
 }
-.topnav-btn:hover::before {
+.publicnav-btn:hover::before {
   opacity: 2;
   transform: scale(1, 1);
 }
-.topnav-btn::after {
+.publicnav-btn::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -118,7 +118,7 @@ div[class*=box] {
   transition: all 0.4s;
   background-color: rgba(66, 98, 140, 0.375);
 }
-.topnav-btn:hover::after {
+.publicnav-btn:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
 }

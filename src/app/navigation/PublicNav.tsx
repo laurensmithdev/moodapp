@@ -5,8 +5,8 @@ import './PublicNav.css';
 
 const PublicNav: React.FC = () => {
     return (
-        <div className='topnav'>
-            <Link href='/' className='topnav-title'>
+        <div className='publicnav'>
+            <Link href='/' className='publicnav-title'>
                 MoodSync
             </Link>
         </div>
