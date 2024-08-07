@@ -3,7 +3,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import './login.css'
+import './login.css';
 
 const LoginForm: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -20,9 +20,9 @@ const LoginForm: React.FC = () => {
 
     return (
         <form className='login-form' onSubmit={handleSubmit}>
-            <div className='title'>Welcome Back</div>
-            <div className='subtitle'>Please log into your account</div>
-            <div className='input-container ic1'>
+            <div className='login-title'>Welcome Back</div>
+            <div className='login-subtitle'>Please log into your account</div>
+            <div className='input-container ic1-login'>
                 <input id='email'
                 className='email-input'
                 type='email'
@@ -32,7 +32,7 @@ const LoginForm: React.FC = () => {
                 required
                 />
             </div>
-            <div className='input-container ic2'>
+            <div className='input-container ic2-login'>
                 <input id='password'
                 className='password-input'
                 type='password'
@@ -42,7 +42,9 @@ const LoginForm: React.FC = () => {
                 required
                 />
             </div>
-            <button type='submit' className='submit'>Submit</button>
+            <a href='/dashboard'>
+                <button type='submit' className='login-submit'>Submit</button>
+            </a>
         </form>
 
     );

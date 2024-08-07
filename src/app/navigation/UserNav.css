@@ -8,22 +8,29 @@
     position: fixed;
     height: 195px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
   }
 
-  /* Sidebar links */
   .sidebar a {
-    display: block;
-    color: black;
-    padding: 12px;
+    padding: 6px 10px 6px 10px;
     text-decoration: none;
-    text-align: center;
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    color: inherit;
   }
 
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
-    background-color: #612e785f;
-    color: white;
+  .sidebar i {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .sidebar a:hover {
+    color: #612e785f;
   }
 
 

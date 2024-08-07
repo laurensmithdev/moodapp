@@ -1,0 +1,61 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of boxes to the next line */
+    gap: 30px; /* Adds space between the boxes */
+    padding: 10px; /* Adds space around the container */
+    width: 80%; /* Makes the container 80% of the page width */
+    margin: 0 auto; /* Centers the container horizontally */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    background-color: #c5bbd53d;
+    height: auto; /* Adjust height based on content */
+    margin-top: 20px;
+}
+
+.box {
+    flex: 1 1 calc(25% - 15px); /* Flex-grow and flex-shrink enabled, with a base size of 25% of the container width minus gap */
+    min-width: 150px; /* Minimum width for each box */
+    padding: 10px; /* Padding inside the box */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    background-color: rgba(220, 225, 227, 0.804); /* Background color for visibility */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    border: 1px solid #ddd; /* Border for better visibility */
+}
+
+.mood-label {
+    margin-bottom: 10px; /* Space between label and slider */
+}
+
+.slidecontainer {
+    width: 100%; /* Ensure the slider container fits within the box */
+    position: relative; /* Allow positioning of labels */
+}
+
+.slider {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+    appearance: none; /* Standard property to remove default styling */
+    width: 100%; /* Full width of the box */
+    height: 15px; /* Adjust height */
+    background: #ddd; /* Background color */
+    outline: none; /* Remove default outline */
+    opacity: 0.7; /* Slightly transparent */
+    transition: opacity .15s ease-in-out; /* Smooth transition */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    width: 25px; /* Width of the thumb */
+    height: 25px; /* Height of the thumb */
+    background: #9b7ddcb6; /* Background color of the thumb */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 20px;
+}
+
+.slider-label {
+    margin-top: 5px; /* Space between slider and label */
+    font-size: 12px; /* Adjust font size */
+    text-align: center; /* Center align the label text */
+}

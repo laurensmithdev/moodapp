@@ -28,7 +28,7 @@
   margin-bottom: 10px;
 }
 
-.title {
+.login-title {
   color: #eee;
   font-size: 36px;
   font-weight: 400;
@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-.subtitle {
+.login-subtitle {
   color: #eee;
   font-size: 16px;
   font-weight: 400;
@@ -44,7 +44,7 @@
   text-align: center;
 }
 
-.input-container {
+.login-input-container {
   height: 50px;
   position: relative;
   width: 100%;
@@ -81,7 +81,7 @@
   width: 100%;
 }
 
-.submit {
+.login-submit {
   background-color: rgba(46, 132, 185, 0.746);
   border-radius: 12px;
   border: 0;

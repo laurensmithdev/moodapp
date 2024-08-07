@@ -1,20 +1,18 @@
-// src/app/dashboard/page.tsx
+// src/app/account/page.tsx
 
 import React from "react";
 import Background from "../Background";
 import PublicNav from "../navigation/PublicNav";
 import UserNav from "../navigation/UserNav";
-import MoodLog from "./MoodLog";
 
-const Dashboard: React.FC = () => {
+const UserAccount: React.FC = () => {
     return (
         <Background>
             <PublicNav />
             <UserNav />
-            <h1>Dashboard</h1>
-            <MoodLog />
+            <h1>Account</h1>
         </Background>
     );
 };
 
-export default Dashboard;
+export default UserAccount;
