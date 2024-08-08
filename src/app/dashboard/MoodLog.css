@@ -1,3 +1,16 @@
+
+.main-container {
+    width: 80%; /* Makes the container 80% of the page width */
+    margin: 0 auto; /* Centers the container horizontally */
+    background-color: #c5bbd53d;
+    padding: 10px; /* Adds space around the container */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping of boxes to the next line */
@@ -7,7 +20,6 @@
     margin: 0 auto; /* Centers the container horizontally */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
     background-color: #c5bbd53d;
-    height: auto; /* Adjust height based on content */
     margin-top: 20px;
 }
 
@@ -24,8 +36,31 @@
     border: 1px solid #ddd; /* Border for better visibility */
 }
 
-.mood-label {
+.mood-label-container {
+    display: flex; /* Flexbox for mood label and icon alignment */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width of the box */
+    justify-content: space-between; /* Space between title and icon */
     margin-bottom: 10px; /* Space between label and slider */
+    position: relative; /* Allow positioning of elements inside */
+}
+
+.mood-label {
+    text-align: center; /* Center text within the label */
+    flex-grow: 1; /* Allow the label to take up space and push icon to the right */
+}
+
+.icon-container {
+    display: flex; /* Flexbox for icon alignment */
+    align-items: center; /* Center icon vertically */
+    margin-left: 10px; /* Space between title and icon */
+    position: absolute; /* Position icon absolutely within the container */
+    right: 10px; /* Align icon to the right edge */
+}
+
+.info-icon {
+    cursor: pointer;
+    color:#0000002b;
 }
 
 .slidecontainer {
@@ -35,7 +70,6 @@
 
 .slider {
     -webkit-appearance: none; /* Remove default styling in WebKit browsers */
-    -moz-appearance: none; /* Remove default styling in Firefox */
     appearance: none; /* Standard property to remove default styling */
     width: 100%; /* Full width of the box */
     height: 15px; /* Adjust height */
@@ -54,8 +88,56 @@
     border-radius: 20px;
 }
 
+.slider::-webkit-slider-thumb:hover {
+    background-color: #514173b6;
+}
+
 .slider-label {
     margin-top: 5px; /* Space between slider and label */
     font-size: 12px; /* Adjust font size */
     text-align: center; /* Center align the label text */
+}
+
+.note-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adds space around the container */
+    width: 70%; /* Makes the container take up full width of its parent */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    background-color: #c5bbd53d;
+    margin-top: 20px;
+}
+
+.note-textarea {
+    width: 100%; /* Ensure textarea takes full width of the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 70px;
+    max-height: 140px;
+    background-color: #ddddddd6;
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.save-button {
+    padding: 10px 30px;
+    background-color: #715ba2b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.save-button:hover {
+    background-color: #514173b6;
 }
